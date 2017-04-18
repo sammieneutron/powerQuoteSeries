@@ -5973,12 +5973,6 @@ button.close {
   margin-left: 0;
 }
 
-.footer {
-  padding: 1%;
-  background-color: rgba(231, 231, 231, 0.53);
-}
-
-
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;

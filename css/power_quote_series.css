@@ -31,7 +31,9 @@ hr {
     max-width: 400px;
     border-color: #999999;
 }*/
-
+body {
+    font-family: Ebrima;
+}
 
 #footerImg {
   width: 80px;
@@ -197,4 +199,10 @@ footer p {
         display: table;
         clear: both;
     }
+}
+.footer {
+  padding: 1%;
+  background-color: rgba(231, 231, 231, 0.53);
+    color: #292929;
+    font-family: 'Segoe UI Black';
 }
