@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    <title>Booking | Power Quote Series</title>
+    <link href="Images/web_icon.jpg" size="14x14" rel="icon" type="image/png">
+    <script src="bootstrap/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/power_quote_series.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body style="font-family: ebrima">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-bar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html"><img src="Images/powerSeriesCyan.png" style="height: 53px; padding-bottom: 2px"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu-bar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="intro-text" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="intro-text" href="about.html">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a class="intro-text" href="power_quote_series.html">POWER QUOTE SERIES</a>
+                    </li>
+                    <li>
+                        <a class="intro-text" href="fitly_spoken_messages.html">FITLY SPOKEN MESSAGES</a>
+                    </li>
+                    <li class="active">
+                        <a class="intro-text" href="booking.html">BOOKING</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.Navigation -->
+    <section>
+        <div class="intro-text text-center">
+            'Welcome to <b>my space</b>!' -<a target="_blank" href="About.html">Emmanuel Obu.</a>
+        </div>
+        <br><br><br>
+    
+        <div class="container" style="">
+            <p class="text">
+                If you need to book a session with me, kindly fill the form below and click 'make booking'. I will get in touch 
+                with you <abbr title="As Soon As Possible">ASAP</abbr>.
+                <br>
+                <div class="alert alert-info alert-dismissable" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="glyphicon-alert text-center">
+                        <b>Please be sure to fill in your right details!</b>
+                    </div>
+                </div>
+            </p>
+        </div>
+    	<form action="contact_me.php" id="booking_form" method="POST">
+    		<div class="container">
+            <div class="row" style="border: 1px solid cornflowerblue; border-radius: 5px">
+                <fieldset>
+                    <div class="col-sm-12 col-sm-4" style="padding: 3%;">
+                        <legend>Basic Info</legend>
+                        <label for="client_name">Your name <span style="color: red">*</span></label>
+                        <br>
+                        <input type="text" name="client_name" id="client_name" style="width: 300px; border-radius: 3px" required>
+                        <br><br>
+                        <label for="client_email">E-mail address <span style="color: red">*</span></label>
+                        <br>
+                        <input type="email" name="client_email" id="client_email" placeholder="address@domain.com" style="width: 300px; border-radius: 3px" required>
+                        <br><br>
+                        <label for="client_mobile">Mobile Number <span style="color: red">*</span></label>
+                        <br>
+                        <input type="telephone" name="client_mobile" id="client_mobile" style="width: 300px; border-radius: 3px;" required>
+                    </div>
+                    <div class="col-sm-12 col-sm-4" style="padding: 3%">
+                        <legend>Advance Info</legend>
+                        <label for="event_type">Event type <span style="color: red">*</span></label>
+                        <br>
+                        <select id="event_type" style="width: 300px; border-radius: 3px" required>
+                            <option value="">Select an option</option>
+                            <option value="Preaching">Preaching</option>
+                            <option value="Business Talk/Summit">Business Talk/Summit</option>
+                            <option value="Conference">Conference</option>
+                            <option value="Motivational Talk">Motivational Talk</option>
+                            <option value="Corporate Strategy">Corporate Strategy</option>
+                        </select>
+                        <br><br>
+                        <label for="event_location">Event Location (Include Country & State) <span style="color: red">*</span></label>
+                        <br>
+                        <input type="text" name="event_location" id="event_location" style="width: 300px; border-radius: 3px" required>
+                        <br><br>
+                        <label for="event_date">Event Date <span style="color: red">*</span></label>
+                        <br>
+                        <input type="date" name="event_date" id="event_date" style="width: 300px; border-radius: 3px;" required>
+                        <br><br>
+                    </div>
+                    <div class="col-sm-12 col-sm-3" style="padding: 3%">
+                        <legend>Other Info</legend>
+                        <label for="event_description">Brief Description (of Event) <span style="color: red">*</span></label>
+                        <br>
+                        <textarea rows="8" cols="45" form="booking_form" name="event_description" id="event_description" maxlength="400" placeholder="Write here" style="border-radius: 3px; resize: none; width: 145%" required></textarea>
+                        <br><br>
+                        <div class="pull-right" style="padding-right: 0%; padding-bottom: 5px">
+                            <input type="submit" name="submit_booking" id="submit_booking" value="make booking" class="btn btn-primary btn-md">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+    		</div>
+    	</form>
+    </section>
+    <br><br>
+    <footer class="footer">
+        <div class="container" style="">
+            <div class="row" style="">
+                <div class="col-xs-5" style="">
+                    <img class="img-responsive" id="footerImg" style="float: right" src="Images/FooterImage.png">
+                </div>
+                <div class="col-xs-7" style="padding-top: 17px">
+                    <ul class="fa" style="float: left">
+                        <div><div class="fa fa-facebook-square fa-1x" style="color: #292929"></div><a style="color: #292929; font-family: 'Segoe UI Black'; font-size: 11px" href="https://www.facebook.com/emmanuel.obu.1" target="_blank"> emmanuelobu</a></div>
+
+                        <div><div class="fa fa-twitter-square fa-1x" style="color: #292929"></div><a style="color: #292929; font-family: 'Segoe UI Black'; font-size: 11px" href="https://www.twitter.com/obuemmanuel" target="_blank"> obuemmanuel</a></div>
+
+                        <div><div class="fa fa-instagram fa-1x" style="color: #292929"></div><a style="color: #292929; font-family: 'Segoe UI Black'; font-size: 11px" href="https://www.instagram.com/obuemmanuel" target="_blank"> obuemmanuel</a></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h6 class="text-right" style="font-family: Ebrima">
+            &copy PowerQuoteSeries 2017
+        </h6>
+    </footer>
+</body>
+</html>
